@@ -12,16 +12,18 @@ function App() {
   const [team, setTeam] = useState<string>('default');
 
   return (
-    <ThemeProvider theme={team == 'marvel' ? marvelTheme : (team == 'dc' ? dcTheme : defaultTheme)}>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home onToggleTeam={(team) => setTeam(team)}/>} />
-        </Routes>
-        <Footer />
-        <GlobalStyle />
-      </BrowserRouter>
-    </ThemeProvider>    
+    <div data-testid='App'>
+      <ThemeProvider theme={team === 'marvel' ? marvelTheme : (team === 'dc' ? dcTheme : defaultTheme)}>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home onToggleTeam={(team) => setTeam(team)}/>} />
+          </Routes>
+          <Footer />
+          <GlobalStyle />
+        </BrowserRouter>
+      </ThemeProvider>
+    </div>        
   );
 }
 
