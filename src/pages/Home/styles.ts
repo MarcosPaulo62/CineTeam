@@ -52,11 +52,15 @@ export const MainHome = styled.main`
         background-color: ${(props) => props.theme.secondary};
         border-radius: 10px;
         width: 80%;
-        padding: 3rem;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: .8rem;
         color: white;
+
+        h2{
+            margin-bottom: .5rem;
+        }
     }
 `
