@@ -36,8 +36,14 @@ export const MainHome = styled.main`
         cursor: pointer;
 
         &:hover{
-            border: 5px solid green;
             box-shadow: 0px 4px 10px black;
+        }
+
+        &:nth-child(1):hover{
+            border: 5px solid #EC1D24;
+        }
+        &:nth-child(2):hover{
+            border: 5px solid #007AF1;
         }
     }
 `

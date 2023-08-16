@@ -6,7 +6,7 @@ export default function Header(){
     return(
         <>
         <StyledHeader>
-            <Link to="/">
+            <Link to="/" data-testid="link-home">
                 <img src={logo} alt="Logo CineTeam" />
             </Link>
         </StyledHeader>        
