@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import background from '../../assets/home-background.jpg'
 
 export const MainHome = styled.main`
     background-image: ${(props) => props.theme.bgImage};
@@ -10,6 +9,8 @@ export const MainHome = styled.main`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
 
     .selecao{
         background-color: ${(props) => props.theme.secondary};
@@ -45,5 +46,17 @@ export const MainHome = styled.main`
         &:nth-child(2):hover{
             border: 5px solid #007AF1;
         }
+    }
+
+    .descricao{
+        background-color: ${(props) => props.theme.secondary};
+        border-radius: 10px;
+        width: 80%;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        color: white;
     }
 `
